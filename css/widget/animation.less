@@ -1,0 +1,50 @@
+#bgLuckyDrawEnd {
+  position: absolute;
+  z-index: -10;
+  &.bg {
+    background: url(../img/light.png) no-repeat center center;
+    -webkit-animation: lightAnimation 5s infinite linear;
+    -moz-animation: lightAnimation 5s infinite linear;
+    -o-animation: lightAnimation 5s infinite linear;
+    animation: lightAnimation 5s infinite linear;
+  }
+}
+
+#iconDiv {
+  position: absolute;
+  left: 50%;
+  width: 800px;
+  margin-left: -400px;
+  z-index: -100;
+  > span {
+    position: absolute;
+    &:nth-child(1) {
+      left: 285px;
+      top: 25px;
+    }
+    &:nth-child(2) {
+      left: 480px;
+      top: 25px;
+    }
+  }
+}
+
+.lightAnimation() {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes lightAnimation {
+  .lightAnimation();
+}
+
+@-webkit-keyframes lightAnimation {
+  .lightAnimation();
+}
